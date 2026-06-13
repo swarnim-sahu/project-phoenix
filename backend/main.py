@@ -1,6 +1,7 @@
 from fastapi import FastAPI, UploadFile, File
 from detection.detector import detect_survivors
 from api.mission_planner import create_mission
+from api.route_optimizer import find_best_route
 import shutil
 
 app = FastAPI()
@@ -26,8 +27,10 @@ async def detect(file: UploadFile = File(...)):
 
     mission = create_mission(
       result["survivors_found"])
+    route = find_best_route()
 
     return {
         **result,
-        **mission
+        **mission,
+        **route
         }
