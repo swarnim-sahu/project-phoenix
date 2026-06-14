@@ -262,17 +262,37 @@
 
 # 
 
-# \---
+# 
+
+# \## **Team Phoenix**
 
 # 
 
-# \## **Team**
+# \### Swarnim Kumar Sahu
+
+# \- AI Development
+
+# \- FastAPI Backend
+
+# \- YOLOv8 Integration
+
+# \- Route Optimization
+
+# \- Resource Allocation System
 
 # 
 
-# \*\*Swarnim Kumar Sahu\*\*
+# \### Vidisha Choudhary
 
-# \*\*Vidisha Choudhary\*\*
+# \- Research \& Problem Analysis
+
+# \- Idea Finalization
+
+# \- Presentation Design
+
+# \- Demo Video Production
+
+# 
 
 # Project Phoenix - Building AI-powered disaster response systems for faster and smarter rescue operations.
 
