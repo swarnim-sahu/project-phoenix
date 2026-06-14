@@ -92,8 +92,6 @@
 
 # 
 
-# ```text
-
 # Disaster Image
 
 # &#x20;      ↓
@@ -166,8 +164,6 @@
 
 # 
 
-# \---
-
 # 
 
 # \## **Project Structure**
@@ -214,11 +210,7 @@
 
 # └── README.md
 
-# ```
-
 # 
-
-# \---
 
 # 
 
@@ -239,8 +231,6 @@
 # 6\. Dashboard displays mission intelligence.
 
 # 
-
-# \---
 
 # 
 
