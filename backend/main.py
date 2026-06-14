@@ -3,10 +3,17 @@ from detection.detector import detect_survivors
 from api.mission_planner import create_mission
 from api.route_optimizer import find_best_route
 from api.resource_allocator import allocate_resources
+from fastapi.middleware.cors import CORSMiddleware
 import shutil
 
 app = FastAPI()
-
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/")
 def home():

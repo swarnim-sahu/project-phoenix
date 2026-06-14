@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoenix Command Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1> PHOENIX COMMAND CENTER</h1>
+        <p>Autonomous Disaster Response Platform</p>
+        <p class="version">
+    Phoenix v1.0 | Autonomous Multi-Agent Disaster Response System
+</p>
+    </div>
+
+    <!-- SYSTEM STATUS -->
+    <div class="status-bar">
+
+        <div class="status online">
+            🟢 AI Detection
+        </div>
+
+        <div class="status online">
+            🟢 Mission Planner
+        </div>
+
+        <div class="status online">
+            🟢 Route Engine
+        </div>
+
+        <div class="status online">
+            🟢 Resource Agent
+        </div>
+
+    </div>
+
+    <!-- FILE UPLOAD -->
+    <div class="upload-section">
+        <input type="file" id="imageInput">
+        <button id="analyzeBtn">Analyze Disaster</button>
+    </div>
+
+    <!-- IMAGE + SUMMARY -->
+    <div class="main-grid">
+
+        <!-- IMAGE PREVIEW -->
+        <div class="panel">
+
+            <h2>Disaster Feed</h2>
+
+            <img
+                id="preview"
+                src=""
+                alt="Disaster Preview"
+                style="
+                    width:100%;
+                    max-height:350px;
+                    object-fit:contain;
+                    border-radius:10px;
+                ">
+
+        </div>
+
+        <!-- MISSION SUMMARY -->
+        <div class="panel">
+
+            <h2>Mission Summary</h2>
+
+            <p>
+                <strong>Mission:</strong>
+                <span id="mission-summary">-</span>
+            </p>
+
+            <p>
+                <strong>Priority:</strong>
+                <span id="priority-summary">-</span>
+            </p>
+
+            <p>
+                <strong>ETA:</strong>
+                <span id="eta-summary">-</span>
+            </p>
+
+            <p>
+                <strong>Distance:</strong>
+                <span id="distance">-</span>
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- KPI CARDS -->
+    <div class="cards">
+
+        <div class="card">
+            <h3> Survivors Found</h3>
+            <div class="value" id="survivors">0</div>
+        </div>
+
+        <div class="card">
+            <h3> Threat Level</h3>
+            <div class="value priority" id="priority">-</div>
+        </div>
+
+        <div class="card">
+            <h3> Assets Deployed</h3>
+            <div class="value" id="total-drones">0</div>
+        </div>
+
+        <div class="card">
+            <h3> Mission Success</h3>
+            <div class="value" id="success">0%</div>
+        </div>
+
+    </div>
+
+    <!-- ROUTE -->
+    <div class="panel">
+
+        <h2>Route Optimization</h2>
+
+        <div id="route">
+
+            BASE
+            <br>↓<br>
+
+            CHECKPOINT-A
+            <br>↓<br>
+
+            CHECKPOINT-B
+            <br>↓<br>
+
+            VICTIM-ZONE
+
+        </div>
+
+    </div>
+
+    <!-- RESOURCE ALLOCATION -->
+    <div class="panel">
+
+        <h2>Resource Allocation</h2>
+
+        <div class="resources">
+
+            <div>
+                Surveillance Drones:
+                <span id="surveillance">-</span>
+            </div>
+
+            <div>
+                Medical Drones:
+                <span id="medical">-</span>
+            </div>
+
+            <div>
+                Battery Estimate:
+                <span id="battery">-</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- SUCCESS BAR -->
+    <div class="panel">
+
+        <h2>Mission Success Probability</h2>
+
+        <div class="progress">
+
+            <div
+                id="progress-bar"
+                class="progress-bar">
+
+                0%
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ACTIVITY LOG -->
+    <div class="panel">
+
+        <h2>System Activity Log</h2>
+
+        <div id="log">
+
+            Phoenix initialized...
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
