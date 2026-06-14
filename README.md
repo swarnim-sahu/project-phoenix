@@ -152,7 +152,7 @@ project-phoenix/
 | Member                  | Contribution                                                             |
 | ----------------------- | ------------------------------------------------------------------------ |
 | Swarnim Sahu            | AI Development, Backend Engineering, Computer Vision, System Integration |
-| Second Team Member Name | Research, Idea Finalization, Presentation Design, Demo Video Production  |
+| Vidisha Choudhary       | Research, Idea Finalization, Presentation Design, Demo Video Production  |
 
 ```
 ```
